@@ -7,4 +7,4 @@ StudentController studentController=new StudentController();
 //studentController.GetByid();
 //studentController.Search();
 FactorialController factorialController=new FactorialController();
-Console.WriteLine(factorialController.Factorial());
+factorialController.Factorial();

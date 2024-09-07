@@ -20,3 +20,4 @@ C:\Users\ferid\Desktop\StudentApp\StudentApp\obj\Debug\net6.0\refint\StudentApp.
 C:\Users\ferid\Desktop\StudentApp\StudentApp\obj\Debug\net6.0\StudentApp.pdb
 C:\Users\ferid\Desktop\StudentApp\StudentApp\obj\Debug\net6.0\StudentApp.genruntimeconfig.cache
 C:\Users\ferid\Desktop\StudentApp\StudentApp\obj\Debug\net6.0\ref\StudentApp.dll
+C:\Users\ferid\Desktop\StudentApp\StudentApp\obj\Debug\net6.0\StudentApp.sourcelink.json

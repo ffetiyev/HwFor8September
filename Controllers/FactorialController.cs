@@ -1,4 +1,5 @@
-﻿using Service.Services;
+﻿using Repository.Exceptions;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace StudentApp.Controllers
@@ -12,13 +13,28 @@ namespace StudentApp.Controllers
             _factorialService = new FactorialService();
         }
 
-        public int Factorial()
+        public void Factorial()
         {
-            Console.WriteLine("add number:");
-            int a =int.Parse(Console.ReadLine());
-            var res = _factorialService.Factorial(a);
+            try
+            {
+                 Console.WriteLine("add number:");
+                int a = int.Parse(Console.ReadLine());
+                if (a < 0)
+                {
+                    throw new FactorialException("Enter Positive number!");
 
-            return res;
+                }
+                var res = _factorialService.Factorial(a);
+
+                  Console.WriteLine(res);
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+
+           
         }
     }
 }
